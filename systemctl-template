@@ -1,0 +1,18 @@
+[Unit]
+# Human readable name of the unit
+# running copy
+Description=Thing Server
+[Service]
+# Command to execute when the service is started
+Type=simple ## expects the ExecStart process to remain running
+            ## if the proc will spawn a child and exit, then use "forking"
+User=RandomUser
+ExecStart=/usr/bin/python3 /home/gamer/things.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
+
+
+
