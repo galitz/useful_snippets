@@ -1,0 +1,2 @@
+curl -u yourname:password -X "DELETE" http://jira.example.com/rest/api/2/issue/ABC-[1-5000]
+# normally the jira GUI limits you to 1000 issues max, the API appears to be unlimited
