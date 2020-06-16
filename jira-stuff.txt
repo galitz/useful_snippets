@@ -1,2 +1,5 @@
 curl -u yourname:password -X "DELETE" http://jira.example.com/rest/api/2/issue/ABC-[1-5000]
 # normally the jira GUI limits you to 1000 issues max, the API appears to be unlimited
+
+project = "MY_PROJECT" AND status in (Closed) and labels = SOME_LABEL 
+# Simple JQL statement to look for stuff (can be used in conflunce, too)
