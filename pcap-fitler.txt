@@ -1,0 +1,2 @@
+dns.flags.response == 0  looks for dns queries where not a response
+dns.flags.response == 1  looks for dns responses
