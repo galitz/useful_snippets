@@ -1,0 +1,7 @@
+dns.flags.response == 0  looks for dns queries where not a response
+dns.flags.response == 1  looks for dns responses
+
+
+ngrep -q -I FILE.pcap 'TeXt' # grep for text 
+tcpdump -r FILE.pcap "tcp[tcpflags] == 18" | wc -l # count synack packets, binary == 00010010
+ngrep -q -I FILE.pcap '' udp | grep '^U' | wc -l  ## count UDP packets
