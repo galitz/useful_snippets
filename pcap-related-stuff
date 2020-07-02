@@ -1,10 +1,24 @@
+
+## Various snippets to help find data in pcaps or live via tcpdump and such.
+
+
 dns.flags.response == 0  looks for dns queries where not a response
 dns.flags.response == 1  looks for dns responses
 
 
 ngrep -q -I FILE.pcap 'TeXt' # grep for text 
-tcpdump -r FILE.pcap "tcp[tcpflags] == 18" | wc -l # count synack packets, binary == 00010010
-ngrep -q -I FILE.pcap '' udp | grep '^U' | wc -l  ## count UDP packets
 
-tcpdump -A -r FILE.pcap | grep STRING # search for a string
-tcpdump -v -r FILE.pcap ip and 'ip[8]=XX' | grep IP | wc -l # count packets with a TTL of XX
+# count synack packets, binary == 00010010
+tcpdump -r FILE.pcap "tcp[tcpflags] == 18" | wc -l
+
+## count UDP packets
+ngrep -q -I FILE.pcap '' udp | grep '^U' | wc -l  
+
+# search for a string
+tcpdump -A -r FILE.pcap | grep STRING 
+
+# count packets with a TTL of XX
+tcpdump -v -r FILE.pcap ip and 'ip[8]=XX' | grep IP | wc -l 
+
+# look for a packet with specific checksum with context
+tcpdump -ttttt -A -vvvvv -r PCAP5.pcap | grep -C 4 -i 0xCFD3 
