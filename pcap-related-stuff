@@ -5,3 +5,6 @@ dns.flags.response == 1  looks for dns responses
 ngrep -q -I FILE.pcap 'TeXt' # grep for text 
 tcpdump -r FILE.pcap "tcp[tcpflags] == 18" | wc -l # count synack packets, binary == 00010010
 ngrep -q -I FILE.pcap '' udp | grep '^U' | wc -l  ## count UDP packets
+
+tcpdump -A -r FILE.pcap | grep STRING # search for a string
+tcpdump -v -r FILE.pcap ip and 'ip[8]=XX' | grep IP | wc -l # count packets with a TTL of XX
