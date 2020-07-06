@@ -3,3 +3,8 @@ curl -u yourname:password -X "DELETE" http://jira.example.com/rest/api/2/issue/A
 
 project = "MY_PROJECT" AND status in (Closed) and labels = SOME_LABEL 
 # Simple JQL statement to look for stuff (can be used in conflunce, too)
+
+labels = "SOME_label" and status changed during (-120d, now())  and status = "closed"  
+# track closed issues by label changed within the last 120 days
+
+
