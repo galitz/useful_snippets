@@ -8,3 +8,11 @@ labels = "SOME_label" and status changed during (-120d, now())  and status = "cl
 # track closed issues by label changed within the last 120 days
 
 
+
+## some random examples:
+project = security AND status in ("In Progress”) AND resolution = Unresolved AND created <= -30d ORDER BY created DESC, priority DESC, updated DESC
+
+
+project = "Security Vulnerability Management" AND status in (Closed) and labels = Cleartext_Passwords
+
+
