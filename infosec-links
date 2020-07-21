@@ -1,4 +1,3 @@
-https://www.boxentriq.com/code-breaking ## all sorts of code breaking greatness
 https://authenticationtest.com  ## test auth and auth attacks (e.g. session hijacking, break CAPTCHA)
 https://github.com/meirwah/awesome-incident-response
 http://targetedattacks.trendmicro.com/cyoa/en/
@@ -24,4 +23,6 @@ https://www.incidentresponse.com/playbooks/malware-outbreak
 Training / Labs:
 https://nps.edu/web/c3o/labtainers  # complete lab setups in a VM + Containers
 
-
+Encoding/Decoding/Hashing and other data processing:
+https://gchq.github.io/CyberChef/
+https://www.boxentriq.com/code-breaking ## all sorts of code breaking greatness
