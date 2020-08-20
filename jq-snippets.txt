@@ -1,0 +1,1 @@
+cat master_data  | jq '.orgs | length'  # count the number of orgs in master_data file
