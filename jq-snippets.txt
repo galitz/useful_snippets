@@ -1,1 +1,5 @@
 cat master_data  | jq '.orgs | length'  # count the number of orgs in master_data file
+
+.[] | select (.commit |contains($i)| not)  # inverse grep in jq speak for anything with field called commit
+.[] | select (.file |contains($i)| not) #  same as above, but for a field called file
+
