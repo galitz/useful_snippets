@@ -1,3 +1,17 @@
+
+Links/Sites for Investigations and Analysis:
+
+https://urlscan.io  # scans websites and provides a lot of useful info for analysis
+https://talosintelligence.com/talos_file_reputation  # search for threats via a file hash
+https://www.virustotal.com/
+https://www.hybrid-analysis.com/ # malware sandbox
+
+Good Talks:
+
+https://youtu.be/4Di34iv388A  ## Blue Team Fundamentals (Benjamin Hering) Bsides SF 2018
+  Excellent talk about how a security/secops could address bang for the buck.  
+
+
 https://authenticationtest.com  ## test auth and auth attacks (e.g. session hijacking, break CAPTCHA)
 https://github.com/meirwah/awesome-incident-response
 http://targetedattacks.trendmicro.com/cyoa/en/
