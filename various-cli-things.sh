@@ -4,3 +4,5 @@ grep AWS-Poller-Thread /opt/rapid7/nexpose/nsc/logs/eso.log | awk '{print $4}' |
 
 
 cat master_data  | jq '.orgs | length'  # JSON: count the number of orgs in master_data file
+
+$ id -Gn "user"  # prints out groups that a user is a member of (including LDAP groups)
