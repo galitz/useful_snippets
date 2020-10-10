@@ -12,6 +12,12 @@ Good Talks:
 https://youtu.be/4Di34iv388A  ## Blue Team Fundamentals (Benjamin Hering) Bsides SF 2018
   Excellent talk about how a security/secops could address bang for the buck.  
 
+Walkthroughs / Video Tutorials:
+
+https://youtu.be/nKYy2Smio7s :: Walkthrough of CMS Made Simple exploit via metasploit
+
+
+
 
 https://authenticationtest.com  ## test auth and auth attacks (e.g. session hijacking, break CAPTCHA)
 https://github.com/meirwah/awesome-incident-response
