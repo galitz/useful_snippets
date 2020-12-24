@@ -1,4 +1,4 @@
-Reverse the resuls of a seaarch:
+Reverse the results of a search:
 ```
 search something | reverse
 ```
