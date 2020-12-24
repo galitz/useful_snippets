@@ -6,3 +6,8 @@ days trying to reproduce again.  Probably the best way
 to use this is clone the repo and then grep through it 
 for things.  e.g. "git grep -i insightvm" if you admin 
 InsightVM/Nexpose.
+
+Otherwise just browse it.
+
+Please feel free to contribute.
+
