@@ -19,7 +19,7 @@ project = "Security Vulnerability Management" AND status in (Closed) and labels 
 
 API query ==  The below is queries the API and returns only the fields for the id and keys for the issue (and API metadata).  It searches the descriptions for the text and for the specified label.  The query specifies the search resuls must all criteria (most examples specifiy the results fulfil any (not all) of the criteria).
 
-curl -qs  -u jira-bot -X GET -H "Content-Type: application/json" "https://shutterstock-jira.codefactori.com/rest/api/2/search?jql=description~4694b9739f84be93d2dc98649821d360cfcba32b%20AND%20labels%20IN%20(%22LAB-001%22)&fields=id,key" > /tmp/stuff
+curl -qs  -u jira-bot -X GET -H "Content-Type: application/json" "https://XXXX/rest/api/2/search?jql=description~4694b9739f84be93d2dc98649821d360cfcba32b%20AND%20labels%20IN%20(%22LAB-001%22)&fields=id,key" > /tmp/stuff
 
 
 
