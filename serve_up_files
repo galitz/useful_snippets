@@ -1,0 +1,6 @@
+## to server files quick and dirty
+
+python -m SimpleHTTPServer $port
+# root is whatever dir the command was issued in
+
+
