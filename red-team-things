@@ -1,0 +1,18 @@
+# Generate a fixed length random word without installing any additional packages
+# the below generates 10 words of alphanumeric chars of length 8 (using gold)
+
+cat /dev/urandom | tr -dc 'a-z0-9A-Z' | fold -w 8 | head -n 10
+
+example:
+````
+[ggalitz@mybox ~]$ cat /dev/urandom | tr -dc 'a-z0-9A-Z' | fold -w 8 | head -n 10
+9eTvSuRk
+2OxLvqmO
+b3G2ux8z
+2bf4hUBB
+NmRABLzU
+FLKqGhoe
+ePqkp0LK
+a0iOQEzk
+NmWkNWpv
+8k6qPupH
