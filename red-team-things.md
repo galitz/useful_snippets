@@ -1,4 +1,4 @@
-Generate a fixed length random word without installing any additional packages
+Generate a fixed length random word without installing any additional packages.
 The below generates 10 words of alphanumeric chars of length 8 (using fold, usually available on Linux)
 
 ```
