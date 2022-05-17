@@ -34,7 +34,7 @@ chahDie6
 Koom7aeV
 zoo4Daiv
 Aewu4iep
-ubuntu@ubun2004:~/Desktop$ pwgen -h
+[ggalitz@mybox ~]$ pwgen -h
 Usage: pwgen [ OPTIONS ] [ pw_length ] [ num_pw ]
 
 Options supported by pwgen:
