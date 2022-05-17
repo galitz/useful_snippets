@@ -1,8 +1,9 @@
-# Generate a fixed length random word without installing any additional packages
-# The below generates 10 words of alphanumeric chars of length 8 (using fold, usually available on Linux)
+Generate a fixed length random word without installing any additional packages
+The below generates 10 words of alphanumeric chars of length 8 (using fold, usually available on Linux)
 
+```
 cat /dev/urandom | tr -dc 'a-z0-9A-Z' | fold -w 8 | head -n 10
-
+```
 example:
 ```
 [ggalitz@mybox ~]$ cat /dev/urandom | tr -dc 'a-z0-9A-Z' | fold -w 8 | head -n 10
@@ -19,7 +20,7 @@ NmWkNWpv
 
 ```
 
-# You can also use the pwgen command, but that's not typcically installed by default:
+You can also use the pwgen command, but that's not typcically installed by default:
 
 ```
 [ggalitz@mybox ~] pwgen -1 8 10
