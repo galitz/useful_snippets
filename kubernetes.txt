@@ -1,0 +1,6 @@
+# port forwarding to expose a service temporarily
+
+sudo [ microk8s ] kubectl port-forward -n SOME-NAMESPACE service/SOME-SERVICE SOME_EXTNERAL_PORT:INTERNAL_PORT_OF_APP --address 0.0.0.0
+
+example:
+sudo microk8s kubectl port-forward -n kube-system service/kubernetes-dashboard 10443:443 --address 0.0.0.0
